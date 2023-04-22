@@ -79,6 +79,12 @@
 #about .photo {
   margin: 2.3rem;
 }
+@media (max-width: 481px) {
+  #about #imageContainer {
+    display: flex;
+    justify-content: center;
+  }
+}
 
 #projects .hero-image-secondary {
   background-image: url("../assets/morning_light.jpg");

@@ -45,6 +45,13 @@ $mobile:481px;
     .photo{
         margin:2.3rem;
     }
+    @media(max-width: $mobile){
+        #imageContainer{
+        display:flex;
+        justify-content:center;
+    }
+    }
+    
 }
 #projects{
     @include basic-body();
