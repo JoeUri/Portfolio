@@ -1,0 +1,62 @@
+
+$mobile:481px;
+
+@mixin basic-body() {
+    .hero-image-secondary{
+        background-image: url('../assets/morning_light.jpg');
+        height:300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .nav-link{
+        font-size:larger;
+        color: white;
+    }
+    .navbar-brand{
+        font-size:xx-large;
+    } 
+    .photo{
+        max-height:400px;
+        width: auto;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .footer{
+        background-color:lightsteelblue;
+        ul{
+            margin-left:auto;
+            margin-right:auto;
+        }
+        .nav-footer{
+            padding:.5rem;
+        }
+    }
+}
+
+
+#about{
+    @include basic-body();
+    @media (min-width: $mobile){
+        .main-cont{
+            margin:auto 10%;
+        }
+    }
+    .photo{
+        margin:2.3rem;
+    }
+}
+#projects{
+    @include basic-body();
+}
+#contact{
+    @include basic-body();
+    .list-group-item{
+        border: none;
+    }
+    @media (min-width: $mobile){
+        .main-cont{
+            margin:auto 10% 1rem;
+        }
+    }
+}
