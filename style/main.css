@@ -73,6 +73,7 @@
 }
 #about .hero-image-secondary .navbar {
   background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
 }
 #about .hero-image-secondary .nav-link {
   font-size: x-large;
@@ -80,9 +81,6 @@
 }
 #about .hero-image-secondary .navbar-nav {
   margin: auto 1rem;
-}
-#about .container-fluid {
-  --bs-gutter-x:0;
 }
 #about .navbar-brand {
   font-size: xx-large;
@@ -132,6 +130,7 @@
 }
 #projects .hero-image-secondary .navbar {
   background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
 }
 #projects .hero-image-secondary .nav-link {
   font-size: x-large;
@@ -139,9 +138,6 @@
 }
 #projects .hero-image-secondary .navbar-nav {
   margin: auto 1rem;
-}
-#projects .container-fluid {
-  --bs-gutter-x:0;
 }
 #projects .navbar-brand {
   font-size: xx-large;
@@ -177,6 +173,7 @@
 }
 #contact .hero-image-secondary .navbar {
   background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
 }
 #contact .hero-image-secondary .nav-link {
   font-size: x-large;
@@ -184,9 +181,6 @@
 }
 #contact .hero-image-secondary .navbar-nav {
   margin: auto 1rem;
-}
-#contact .container-fluid {
-  --bs-gutter-x:0;
 }
 #contact .navbar-brand {
   font-size: xx-large;

@@ -9,7 +9,8 @@ $mobile:481px;
         background-repeat: no-repeat;
         background-size: cover;
         .navbar{
-           background-color: rgba(0, 0, 0, 0.6)
+           background-color: rgba(0, 0, 0, 0.6);
+            width:100%;
         }
         .nav-link{
             font-size:x-large;
@@ -19,9 +20,9 @@ $mobile:481px;
             margin:auto 1rem;
         }
     }
-    .container-fluid{
-        --bs-gutter-x:0;
-    }
+    // .container-fluid{
+    //     --bs-gutter-x:0;
+    // }
     .navbar-brand{
         font-size:xx-large;
         color: white;
