@@ -8,14 +8,28 @@ $mobile:481px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        .navbar{
+           background-color: rgba(0, 0, 0, 0.6)
+        }
         .nav-link{
-        font-size:x-large;
-        color: white;
+            font-size:x-large;
+            color: white;
+        }
+        .navbar-nav{
+            margin:auto 1rem;
+        }
     }
+    .container-fluid{
+        --bs-gutter-x:0;
     }
     .navbar-brand{
         font-size:xx-large;
+        color: white;
+        margin:auto 1rem;
     } 
+    .navbar-toggler{
+        margin-right: 1rem
+    }
     .photo{
         max-height:400px;
         width: auto;
@@ -42,16 +56,15 @@ $mobile:481px;
             margin:auto 10%;
         }
     }
-    .photo{
-        margin:2.3rem;
-    }
     @media(max-width: $mobile){
         #imageContainer{
         display:flex;
         justify-content:center;
     }
+    p{
+        padding: 1rem;
     }
-    
+    }
 }
 #projects{
     @include basic-body();

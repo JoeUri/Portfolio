@@ -71,12 +71,26 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+#about .hero-image-secondary .navbar {
+  background-color: rgba(0, 0, 0, 0.6);
+}
 #about .hero-image-secondary .nav-link {
   font-size: x-large;
   color: white;
 }
+#about .hero-image-secondary .navbar-nav {
+  margin: auto 1rem;
+}
+#about .container-fluid {
+  --bs-gutter-x:0;
+}
 #about .navbar-brand {
   font-size: xx-large;
+  color: white;
+  margin: auto 1rem;
+}
+#about .navbar-toggler {
+  margin-right: 1rem;
 }
 #about .photo {
   max-height: 400px;
@@ -99,13 +113,13 @@
     margin: auto 10%;
   }
 }
-#about .photo {
-  margin: 2.3rem;
-}
 @media (max-width: 481px) {
   #about #imageContainer {
     display: flex;
     justify-content: center;
+  }
+  #about p {
+    padding: 1rem;
   }
 }
 
@@ -116,12 +130,26 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+#projects .hero-image-secondary .navbar {
+  background-color: rgba(0, 0, 0, 0.6);
+}
 #projects .hero-image-secondary .nav-link {
   font-size: x-large;
   color: white;
 }
+#projects .hero-image-secondary .navbar-nav {
+  margin: auto 1rem;
+}
+#projects .container-fluid {
+  --bs-gutter-x:0;
+}
 #projects .navbar-brand {
   font-size: xx-large;
+  color: white;
+  margin: auto 1rem;
+}
+#projects .navbar-toggler {
+  margin-right: 1rem;
 }
 #projects .photo {
   max-height: 400px;
@@ -147,12 +175,26 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+#contact .hero-image-secondary .navbar {
+  background-color: rgba(0, 0, 0, 0.6);
+}
 #contact .hero-image-secondary .nav-link {
   font-size: x-large;
   color: white;
 }
+#contact .hero-image-secondary .navbar-nav {
+  margin: auto 1rem;
+}
+#contact .container-fluid {
+  --bs-gutter-x:0;
+}
 #contact .navbar-brand {
   font-size: xx-large;
+  color: white;
+  margin: auto 1rem;
+}
+#contact .navbar-toggler {
+  margin-right: 1rem;
 }
 #contact .photo {
   max-height: 400px;
