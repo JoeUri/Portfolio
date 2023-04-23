@@ -16,8 +16,30 @@
 #index .navbar-brand, #index .nav-link {
   color: white;
 }
+#index .imageContainer {
+  overflow: hidden;
+  position: relative;
+}
 #index .headshot {
-  max-width: 75%;
+  position: absolute;
+  z-index: 2;
+  transition: 0.4s;
+  width: 100%;
+}
+#index .headshot2 {
+  filter: blur(5px);
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+#index .imageContainer:hover .headshot {
+  filter: blur(5px);
+  transform: scale(1.1);
+  opacity: 0;
+}
+#index .imageContainer:hover .headshot2 {
+  filter: blur(0);
+  transform: scale(1.1);
+  opacity: 1;
 }
 #index .btn {
   --bs-btn-border-radius: 1rem;
