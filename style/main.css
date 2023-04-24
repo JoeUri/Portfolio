@@ -14,6 +14,9 @@
   font-size: large;
   font-weight: bold;
 }
+#index .hero-image .collapseCont {
+  text-align: center;
+}
 #index .navbar-brand, #index .nav-link {
   color: white;
 }
@@ -82,6 +85,9 @@
 #about .hero-image-secondary .navbar-nav {
   margin: auto 1rem;
 }
+#about .collapseCont {
+  text-align: center;
+}
 #about .navbar-brand {
   font-size: xx-large;
   color: white;
@@ -139,6 +145,9 @@
 #projects .hero-image-secondary .navbar-nav {
   margin: auto 1rem;
 }
+#projects .collapseCont {
+  text-align: center;
+}
 #projects .navbar-brand {
   font-size: xx-large;
   color: white;
@@ -181,6 +190,9 @@
 }
 #contact .hero-image-secondary .navbar-nav {
   margin: auto 1rem;
+}
+#contact .collapseCont {
+  text-align: center;
 }
 #contact .navbar-brand {
   font-size: xx-large;
