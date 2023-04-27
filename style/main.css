@@ -18,7 +18,8 @@
   text-align: center;
 }
 #index .hero-image .heroContainer {
-  place-self: end start;
+  position: absolute;
+  bottom: 250px;
 }
 #index .hero-image .heroContainer .heroHeader {
   animation: fadeInUp 1s forwards;
@@ -41,7 +42,7 @@
   }
   100% {
     opacity: 1;
-    transform: translateY(-20px);
+    transform: translateY(-200px);
   }
 }
 #index .navbar-brand, #index .nav-link {
