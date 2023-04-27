@@ -20,6 +20,33 @@ $mobile: 481px;
         .collapseCont{
             text-align:center;
         }
+        .heroContainer{
+            place-self: end start;
+            .heroHeader{
+                animation: fadeInUp 1s forwards;
+                opacity: 0;
+            }
+            .heroText{
+                animation: fadeInUp 1s forwards;
+                animation-delay: 1.5s;
+                opacity: 0;
+            }
+            .heroBtn{
+                animation: fadeInUp 1s forwards;
+                animation-delay: 2s;
+                opacity: 0;
+            }
+        }
+        @keyframes fadeInUp{
+            0%{
+                opacity:0;
+                transform: translateY(0);
+            }
+            100%{
+                opacity: 1;
+                transform: translateY(-20px);
+            }
+        }
     }
     .navbar-brand, .nav-link{
         color: white;
@@ -70,4 +97,5 @@ $mobile: 481px;
             margin:auto 10%;
         }
     }
+
 }

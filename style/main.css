@@ -17,6 +17,33 @@
 #index .hero-image .collapseCont {
   text-align: center;
 }
+#index .hero-image .heroContainer {
+  place-self: end start;
+}
+#index .hero-image .heroContainer .heroHeader {
+  animation: fadeInUp 1s forwards;
+  opacity: 0;
+}
+#index .hero-image .heroContainer .heroText {
+  animation: fadeInUp 1s forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
+}
+#index .hero-image .heroContainer .heroBtn {
+  animation: fadeInUp 1s forwards;
+  animation-delay: 2s;
+  opacity: 0;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+}
 #index .navbar-brand, #index .nav-link {
   color: white;
 }
