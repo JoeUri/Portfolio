@@ -17,20 +17,20 @@
 #index .hero-image .collapseCont {
   text-align: center;
 }
-#index .hero-image .heroContainer {
+#index .heroContainer {
   position: absolute;
   bottom: 250px;
 }
-#index .hero-image .heroContainer .heroHeader {
+#index .heroContainer .heroHeader {
   animation: fadeInUp 1s forwards;
   opacity: 0;
 }
-#index .hero-image .heroContainer .heroText {
+#index .heroContainer .heroText {
   animation: fadeInUp 1s forwards;
   animation-delay: 1.5s;
   opacity: 0;
 }
-#index .hero-image .heroContainer .heroBtn {
+#index .heroContainer .heroBtn {
   animation: fadeInUp 1s forwards;
   animation-delay: 2s;
   opacity: 0;
