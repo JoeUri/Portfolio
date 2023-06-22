@@ -1,35 +1,32 @@
+#index .row {
+  margin: auto 10%;
+}
 #index .hero-image {
-  background-image: url("../assets/morning_light.jpg");
+  background-image: url(../assets/morning_light.jpg);
   height: 100vh;
-  width: 100vw;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#index .hero-image .col {
-  margin-top: 5rem;
-  margin-bottom: auto;
-}
-#index .hero-image .nav-link {
-  font-size: large;
-  font-weight: bold;
-}
-#index .hero-image .collapseCont {
-  text-align: center;
-}
-#index .heroContainer .heroHeader {
+#index .hero-image .heroContainer .heroHeader {
   animation: fadeInUp 1s forwards;
   opacity: 0;
 }
-#index .heroContainer .heroText {
+#index .hero-image .heroContainer .heroText {
   animation: fadeInUp 1s forwards;
   animation-delay: 1.5s;
   opacity: 0;
 }
-#index .heroContainer .heroBtn {
+#index .hero-image .heroContainer .heroBtn {
   animation: fadeInUp 1s forwards;
   animation-delay: 2s;
   opacity: 0;
+}
+#index .hero-image .navbar {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#index .hero-image .navbar-toggler {
+  color: white;
 }
 @keyframes fadeInUp {
   0% {
@@ -69,14 +66,8 @@
   transform: scale(1.1);
   opacity: 1;
 }
-#index .btn {
-  --bs-btn-border-radius: 1rem;
-}
 #index .footer {
   background-color: lightsteelblue;
-}
-#index .footer .nav-link {
-  color: black;
 }
 #index .footer ul {
   margin-left: auto;
@@ -84,173 +75,125 @@
 }
 #index .footer .nav-footer {
   padding: 0.5rem;
-}
-@media (min-width: 481px) {
-  #index .main-cont {
-    margin: auto 10%;
-  }
+  color: black;
 }
 
-#about .hero-image-secondary {
-  background-image: url("../assets/morning_light.jpg");
-  height: 300px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#about .hero-image-secondary .navbar {
-  background-color: rgba(0, 0, 0, 0.6);
-  width: 100%;
-}
-#about .hero-image-secondary .nav-link {
-  font-size: x-large;
-  color: white;
-}
-#about .hero-image-secondary .navbar-nav {
-  margin: auto 1rem;
-}
-#about .collapseCont {
-  text-align: center;
-}
-#about .navbar-brand {
-  font-size: xx-large;
-  color: white;
-  margin: auto 1rem;
-}
-#about .navbar-toggler {
-  margin-right: 1rem;
-}
-#about .photo {
-  max-height: 400px;
-  width: auto;
-  margin-right: auto;
-  margin-left: auto;
-}
-#about .footer {
-  background-color: lightsteelblue;
-}
-#about .footer ul {
-  margin-left: auto;
-  margin-right: auto;
-}
-#about .footer .nav-footer {
-  padding: 0.5rem;
-}
-@media (min-width: 481px) {
-  #about .main-cont {
-    margin: auto 10%;
-  }
-}
-@media (max-width: 481px) {
-  #about #imageContainer {
+@media screen and (max-width: 845px) {
+  #index .hero-image {
+    position: relative;
     display: flex;
+    align-items: center;
     justify-content: center;
   }
-  #about p {
-    padding: 1rem;
+  #index .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+  }
+  #index .main-nav {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  #index .hero-text {
+    position: absolute;
+    top: 85px;
+    z-index: 1;
+  }
+  #index .row {
+    margin: auto 5%;
+  }
+  #index .footer .joePro {
+    text-align: center;
+  }
+  #index .footer .nav {
+    justify-content: center !important;
+  }
+}
+#about .row, #contact .row, #projects .row {
+  margin: auto 10%;
+}
+#about .hero-image-secondary, #contact .hero-image-secondary, #projects .hero-image-secondary {
+  background-image: url("../assets/morning_light.jpg");
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#about .hero-image-secondary .navbar, #contact .hero-image-secondary .navbar, #projects .hero-image-secondary .navbar {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+}
+#about .hero-image-secondary .nav-link, #contact .hero-image-secondary .nav-link, #projects .hero-image-secondary .nav-link {
+  font-size: x-large;
+  color: white;
+}
+#about .hero-image-secondary .navbar-nav, #contact .hero-image-secondary .navbar-nav, #projects .hero-image-secondary .navbar-nav {
+  margin: auto 1rem;
+}
+#about .collapseCont, #contact .collapseCont, #projects .collapseCont {
+  text-align: center;
+}
+#about .navbar-brand, #contact .navbar-brand, #projects .navbar-brand {
+  font-size: xx-large;
+  color: white;
+  margin: auto 1rem;
+}
+#about .navbar-toggler, #contact .navbar-toggler, #projects .navbar-toggler {
+  margin-right: 1rem;
+}
+#about .photo, #contact .photo, #projects .photo {
+  max-height: 400px;
+  width: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+#about .footer, #contact .footer, #projects .footer {
+  background-color: lightsteelblue;
+}
+#about .footer ul, #contact .footer ul, #projects .footer ul {
+  margin-left: auto;
+  margin-right: auto;
+}
+#about .footer .nav-footer, #contact .footer .nav-footer, #projects .footer .nav-footer {
+  padding: 0.5rem;
+  color: black;
+}
+@media (max-width: 481px) {
+  #about .footer .joePro, #contact .footer .joePro, #projects .footer .joePro {
+    text-align: center;
+  }
+  #about .footer .nav, #contact .footer .nav, #projects .footer .nav {
+    justify-content: center !important;
   }
 }
 
-#projects .hero-image-secondary {
-  background-image: url("../assets/morning_light.jpg");
-  height: 300px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#projects .hero-image-secondary .navbar {
-  background-color: rgba(0, 0, 0, 0.6);
-  width: 100%;
-}
-#projects .hero-image-secondary .nav-link {
-  font-size: x-large;
-  color: white;
-}
-#projects .hero-image-secondary .navbar-nav {
-  margin: auto 1rem;
-}
-#projects .collapseCont {
-  text-align: center;
-}
-#projects .navbar-brand {
-  font-size: xx-large;
-  color: white;
-  margin: auto 1rem;
-}
-#projects .navbar-toggler {
-  margin-right: 1rem;
-}
-#projects .photo {
-  max-height: 400px;
-  width: auto;
-  margin-right: auto;
-  margin-left: auto;
-}
-#projects .footer {
-  background-color: lightsteelblue;
-}
-#projects .footer ul {
-  margin-left: auto;
-  margin-right: auto;
-}
-#projects .footer .nav-footer {
-  padding: 0.5rem;
-}
-
-#contact .hero-image-secondary {
-  background-image: url("../assets/morning_light.jpg");
-  height: 300px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#contact .hero-image-secondary .navbar {
-  background-color: rgba(0, 0, 0, 0.6);
-  width: 100%;
-}
-#contact .hero-image-secondary .nav-link {
-  font-size: x-large;
-  color: white;
-}
-#contact .hero-image-secondary .navbar-nav {
-  margin: auto 1rem;
-}
-#contact .collapseCont {
-  text-align: center;
-}
-#contact .navbar-brand {
-  font-size: xx-large;
-  color: white;
-  margin: auto 1rem;
-}
-#contact .navbar-toggler {
-  margin-right: 1rem;
-}
-#contact .photo {
-  max-height: 400px;
-  width: auto;
-  margin-right: auto;
-  margin-left: auto;
-}
-#contact .footer {
-  background-color: lightsteelblue;
-}
-#contact .footer ul {
-  margin-left: auto;
-  margin-right: auto;
-}
-#contact .footer .nav-footer {
-  padding: 0.5rem;
-}
 #contact .list-group-item {
   border: none;
-}
-@media (min-width: 481px) {
-  #contact .main-cont {
-    margin: auto 10% 1rem;
-  }
 }
 #contact .resumeBtn {
   margin: 1rem;
   padding: 0.5rem;
+}
+
+@media (max-width: 481px) {
+  #about .row {
+    margin: auto 5%;
+  }
+  #about #imageContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  #about .photo {
+    max-height: 500px;
+  }
+}
+
+@media (max-width: 481px) {
+  #contact .innerRow {
+    margin: auto auto !important;
+  }
 }/*# sourceMappingURL=main.css.map */

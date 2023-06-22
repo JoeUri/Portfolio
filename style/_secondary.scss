@@ -1,7 +1,10 @@
 
 $mobile:481px;
 
-@mixin basic-body() {
+#about, #contact, #projects{
+    .row{
+        margin: auto 10%;
+    }
     .hero-image-secondary{
         background-image: url('../assets/morning_light.jpg');
         height:300px;
@@ -9,7 +12,7 @@ $mobile:481px;
         background-repeat: no-repeat;
         background-size: cover;
         .navbar{
-           background-color: rgba(0, 0, 0, 0.6);
+            background-color: rgba(0, 0, 0, 0.6);
             width:100%;
         }
         .nav-link{
@@ -45,44 +48,54 @@ $mobile:481px;
         }
         .nav-footer{
             padding:.5rem;
-        }
-    }
-}
-
-
-#about{
-    @include basic-body();
-    @media (min-width: $mobile){
-        .main-cont{
-            margin:auto 10%;
+            color:black;
         }
     }
     @media(max-width: $mobile){
-        #imageContainer{
-        display:flex;
-        justify-content:center;
-    }
-    p{
-        padding: 1rem;
-    }
+        .footer{
+            .joePro{
+                text-align: center;
+            }
+            .nav{
+                justify-content: center!important;
+            }
+        }
     }
 }
-#projects{
-    @include basic-body();
-}
+
 #contact{
-    @include basic-body();
     .list-group-item{
         border: none;
-    }
-    @media (min-width: $mobile){
-        .main-cont{
-            margin:auto 10% 1rem;
-        }
     }
     .resumeBtn{
         margin: 1rem;
         padding: .5rem;
         
+    }
+}
+
+#about{
+    @media(max-width: $mobile){
+        .row{
+            margin: auto 5%;
+        }
+        #imageContainer{
+        display:flex;
+        justify-content:center;
+        margin-bottom: 1rem;
+        }
+        .photo{
+            max-height: 500px;
+        }
+    }
+}
+// #projects{
+//     @include basic-body();
+// }
+#contact{
+    @media(max-width: $mobile){
+        .innerRow{
+            margin: auto auto !important;
+        }
     }
 }

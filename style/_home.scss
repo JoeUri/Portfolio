@@ -2,41 +2,40 @@
 $mobile: 481px;
 
 #index{
+    .row{
+        margin: auto 10%;
+    }
     .hero-image{
-        background-image: url('../assets/morning_light.jpg');
+        background-image: url(../assets/morning_light.jpg);
         height: 100vh;
-        width: 100vw;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        .col{
-            margin-top: 5rem;
-            margin-bottom: auto;
+        .heroContainer{
+            .heroHeader{
+                animation: fadeInUp 1s forwards;
+                opacity: 0;
+            }
+            .heroText{
+                animation: fadeInUp 1s forwards;
+                animation-delay: 1.5s;
+                opacity: 0;
+            }
+            .heroBtn{
+                animation: fadeInUp 1s forwards;
+                animation-delay: 2s;
+                opacity: 0;
+            }
         }
-        .nav-link{
-            font-size:large;
-            font-weight: bold;
+        .navbar{
+            background-color:rgba(0, 0, 0, .8);
+
         }
-        .collapseCont{
-            text-align:center;
-        }
-    }
-    .heroContainer{
-        .heroHeader{
-            animation: fadeInUp 1s forwards;
-            opacity: 0;
-        }
-        .heroText{
-            animation: fadeInUp 1s forwards;
-            animation-delay: 1.5s;
-            opacity: 0;
-        }
-        .heroBtn{
-            animation: fadeInUp 1s forwards;
-            animation-delay: 2s;
-            opacity: 0;
+        .navbar-toggler{
+            color: white;
         }
     }
+    
     @-webkit-keyframes fadeInUp{
         0%{
             opacity:0;
@@ -61,7 +60,7 @@ $mobile: 481px;
         color: white;
     }
     .imageContainer{
-        overflow:hidden;
+        overflow: hidden;
         position: relative;
     }
     .headshot{
@@ -85,26 +84,60 @@ $mobile: 481px;
         transform: scale(1.1);
         opacity: 1;
     }
-    .btn{
-        --bs-btn-border-radius: 1rem;
-    }
     .footer{
         background-color:lightsteelblue;
-        .nav-link{
-            color:black
-        }
         ul{
             margin-left:auto;
             margin-right:auto;
         }
         .nav-footer{
             padding:.5rem;
-        }
-    }
-    @media (min-width: $mobile){
-        .main-cont{
-            margin:auto 10%;
+            color:black;
         }
     }
 
 }
+
+@media screen and (max-width: 845px){
+    #index{
+        .hero-image {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        
+        .navbar {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          z-index: 2;
+        }
+  
+        .main-nav{
+          color: white;
+          font-size: 28px;
+          font-weight: bold;
+        }
+        
+        .hero-text {
+          position: absolute;
+          top:85px;
+          z-index: 1;
+        } 
+
+        .row{
+            margin: auto 5%;
+        }
+
+        .footer{
+            .joePro{
+                text-align: center;
+            }
+            .nav{
+                justify-content: center!important;
+            }
+        }
+      } 
+  }
