@@ -193,6 +193,12 @@
 }
 
 @media (max-width: 481px) {
+  #projects .tableRow {
+    margin: 0 !important;
+  }
+}
+
+@media (max-width: 481px) {
   #contact .innerRow {
     margin: auto auto !important;
   }

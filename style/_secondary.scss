@@ -89,9 +89,13 @@ $mobile:481px;
         }
     }
 }
-// #projects{
-//     @include basic-body();
-// }
+#projects{
+    @media(max-width:$mobile){
+        .tableRow{
+            margin: 0 !important;
+        }
+    }
+}
 #contact{
     @media(max-width: $mobile){
         .innerRow{
